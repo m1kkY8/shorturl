@@ -1,0 +1,9 @@
+package components
+
+import "time"
+
+templ TimeComponent(d time.Time) {
+	<div>
+		{ d.Format(time.RFC3339Nano) }
+	</div>
+}

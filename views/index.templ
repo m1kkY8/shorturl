@@ -1,0 +1,16 @@
+package views
+
+import components "shorturl/views/comps"
+
+templ Index() {
+	<!DOCTYPE html>
+	<html lang="en">
+		@components.Header()
+		<body>
+			<h1>Welcome to shorturl</h1>
+			<a href="/ping">Redirect</a>
+			<br/>
+			<a href="/k">Invalid path</a>
+		</body>
+	</html>
+}
